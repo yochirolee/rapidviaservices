@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Transition } from "@headlessui/react";
-import { HiOutlineXMark, HiBars3,HiPhone } from "react-icons/hi2";
+import { HiOutlineXMark, HiBars3 } from "react-icons/hi2";
 import { siteDetails } from "@/data/siteDetails";
 import { menuItems } from "@/data/menuItems";
 
@@ -44,7 +44,6 @@ const Header: React.FC = () => {
 								</Link>
 							</li>
 						))}
-						
 					</ul>
 
 					{/* Mobile Menu Button */}
