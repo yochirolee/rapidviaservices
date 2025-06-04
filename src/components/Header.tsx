@@ -44,15 +44,7 @@ const Header: React.FC = () => {
 								</Link>
 							</li>
 						))}
-						<li>
-							<Link
-								href="#cta"
-								className="inline-flex items-center text-white bg-primary hover:bg-primary-accent px-8 py-2 rounded-full transition-colors"
-							>
-								<HiPhone className="mr-2" size={20} />
-								Llámanos
-							</Link>
-						</li>
+						
 					</ul>
 
 					{/* Mobile Menu Button */}

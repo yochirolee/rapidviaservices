@@ -34,7 +34,7 @@ body {
 }
 
 .manrope {
-	font-family: "Manrope", sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 }
@@ -45,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Manrope", sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 }
