@@ -1,36 +1,43 @@
 "use client"
 import React from "react";
+import Image from "next/image";
 
 const About1 = () => {
   return (
-    <>
-      <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
-        <div className="container mx-auto">
-          <div className="flex flex-wrap items-center justify-between -mx-4">
+    
+      <section className="overflow-hidden  pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
+        <div className="container  mx-auto items-center">
+          <div className="flex flex-wrap items-center justify-between ">
             <div className="w-full px-4 lg:w-6/12">
               <div className="flex items-center -mx-3 sm:-mx-4">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
-                    <img
-                      src="/images/boda.jpg"
+                    <Image
+                      src="/images/image-1.jpg"
                       alt=""
-                      className="w-full rounded-2xl"
+                      className="w-full rounded-2xl object-cover"
+                      height={200}
+                      width={200}
                     />
                   </div>
                   <div className="py-3 sm:py-4">
-                    <img
-                      src="/images/paquete3.jpg"
+                    <Image
+                      src="/images/image-2.jpg"
                       alt=""
-                      className="w-full rounded-2xl"
+                      className="w-full rounded-2xl object-cover"
+                      height={300}
+                      width={200}
                     />
                   </div>
                 </div>
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="relative z-10 my-4">
-                    <img
+                    <Image
                       src="/images/pasaporte.jpg"
                       alt=""
                       className="w-full rounded-2xl"
+                      height={400}
+                      width={400}
                     />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">
                       <svg
@@ -622,8 +629,8 @@ const About1 = () => {
                 Además, ofrecemos envíos seguros y económicos a Cuba, por vía aérea y marítima. Garantizamos entrega puntual y seguimiento en cada etapa para tu tranquilidad.
                 </p>
                 <a
-                  href="javascript:void(0)"
-                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
+                 
+                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 text-red-500 border border-red-500"
                 >
                   Get Started
                 </a>
@@ -632,7 +639,7 @@ const About1 = () => {
           </div>
         </div>
       </section>
-    </>
+   
   );
 };
 

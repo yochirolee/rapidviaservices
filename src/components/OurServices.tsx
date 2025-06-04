@@ -9,7 +9,14 @@ interface ServiceCardProps {
 
 const OurServices = () => {
   return (
-    <section className="pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+    <section
+            id="hero"
+            className="relative flex items-center justify-center "
+        >
+            <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
+                <div className="absolute inset-0 h-full w-full bg-hero-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]">
+                </div>
+            </div>
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">

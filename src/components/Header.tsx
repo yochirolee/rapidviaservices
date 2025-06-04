@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Transition } from "@headlessui/react";
 import { HiOutlineXMark, HiBars3,HiPhone } from "react-icons/hi2";
-import Container from "./Container";
 import { siteDetails } from "@/data/siteDetails";
 import { menuItems } from "@/data/menuItems";
 
@@ -18,8 +17,8 @@ const Header: React.FC = () => {
 
 	return (
 		<header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
-			<Container className="!px-0">
-				<nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
+			<div className="md:container mx-auto">
+				<nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-8">
 					<Link href="/" className="flex items-center gap-2">
 						<Image
 							src="/images/logo2.png"
@@ -28,7 +27,7 @@ const Header: React.FC = () => {
 							height={80}
 							className="text-foreground min-w-fit w-16 h-10"
 						/>
-						<span className="manrope text-xl font-semibold text-foreground cursor-pointer">
+						<span className=" text-xl font-semibold text-foreground cursor-pointer">
 							{siteDetails.siteName}
 						</span>
 					</Link>
@@ -61,7 +60,7 @@ const Header: React.FC = () => {
 						<button
 							onClick={toggleMenu}
 							type="button"
-							className="bg-primary text-black focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
+							className="tex-primary focus:outline-none rounded-full w-10 h-10 flex items-center justify-center"
 							aria-controls="mobile-menu"
 							aria-expanded={isOpen}
 						>
@@ -74,7 +73,7 @@ const Header: React.FC = () => {
 						</button>
 					</div>
 				</nav>
-			</Container>
+			</div>
 
 			{/* Mobile Menu with Transition */}
 			<Transition
