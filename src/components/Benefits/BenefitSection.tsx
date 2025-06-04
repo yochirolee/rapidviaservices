@@ -68,9 +68,9 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
                             variants={childVariants}
                         >
                             <SectionTitle>
-                                <h3 className="lg:max-w-2xl">
+                                <h2 className="lg:max-w-2xl">
                                     {title}
-                                </h3>
+                                </h2>
                             </SectionTitle>
 
                             <p className="mt-1.5 mx-auto lg:ml-0 leading-normal text-foreground-accent">

@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Transition } from "@headlessui/react";
-import { HiOutlineXMark, HiBars3 } from "react-icons/hi2";
+import { HiOutlineXMark, HiBars3,HiPhone } from "react-icons/hi2";
 import Container from "./Container";
 import { siteDetails } from "@/data/siteDetails";
 import { menuItems } from "@/data/menuItems";
@@ -34,12 +34,12 @@ const Header: React.FC = () => {
 					</Link>
 
 					{/* Desktop Menu */}
-					<ul className="hidden md:flex space-x-6">
+					<ul className="hidden md:flex items-center space-x-6">
 						{menuItems.map((item) => (
 							<li key={item.text}>
 								<Link
 									href={item.url}
-									className="text-foreground hover:text-foreground-accent transition-colors"
+									className="text-foreground  hover:text-foreground-accent transition-colors"
 								>
 									{item.text}
 								</Link>
@@ -48,9 +48,10 @@ const Header: React.FC = () => {
 						<li>
 							<Link
 								href="#cta"
-								className="text-white bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors"
+								className="inline-flex items-center text-white bg-primary hover:bg-primary-accent px-8 py-2 rounded-full transition-colors"
 							>
-								Download
+								<HiPhone className="mr-2" size={20} />
+								Llámanos
 							</Link>
 						</li>
 					</ul>

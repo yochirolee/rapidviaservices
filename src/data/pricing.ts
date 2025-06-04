@@ -2,36 +2,38 @@ import { IPricing } from "@/types";
 
 export const tiers: IPricing[] = [
     {
-        name: 'Starter',
-        price: 29,
-        features: [
-            'Basic cloud integration',
-            'Up to 5 team members',
-            '20GB storage',
-            'Email support',
-        ],
-    },
-    {
-        name: 'Pro',
+        name: 'Servicios Notariales',
         price: 99,
         features: [
-            'Advanced cloud integration',
-            'Up to 20 team members',
-            '100GB storage',
-            'Priority email & phone support',
-            'Advanced analytics',
+            'Asilo político',
+            'Ajuste de estatus (Residencia)',
+            'Permisos de trabajo',
+            'Peticiones de reunificación familiar',
+            'Ciudadanía',
+            'Más',
         ],
     },
     {
-        name: 'Enterprise',
-        price: 'Custom',
+        name: 'Traduccion de documentos',
+        price: 99,
         features: [
-            'Full cloud integration',
-            'Unlimited team members',
-            'Unlimited storage',
-            '24/7 dedicated support',
-            'Custom solutions',
-            'On-site training',
+            'Partidas de nacimiento, matrimonio y defunción',
+            'Poderes notariales y documentos legales',
+            'Formularios de inmigración',
+            'Mociones y peticiones',
+            'Más',
+        ],
+    },
+    {
+        name: 'Envío de paquetes a Cuba',
+        price: 2.50,
+        features: [
+            'Miscelaneas',
+            'Duraderos',
+            'Medicamntos',
+            'Alimentos',
+            'Regalos',
+            'Más',
         ],
     },
 ]

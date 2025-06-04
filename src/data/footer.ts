@@ -6,32 +6,36 @@ export const footerDetails: {
     email: string;
     telephone: string;
     socials: ISocials;
+    Address: string;
+    Horario: string;
 } = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
+    subheading: "Envíos seguros a Cuba y trámites legales confiables en Sarasota.",
     quickLinks: [
         {
-            text: "Features",
-            url: "#features"
+            text: "Servicios Notariales",
+            url: "#servicios-notariales"
         },
         {
-            text: "Pricing",
-            url: "#pricing"
+            text: "Envíos a Cuba",
+            url: "#envios-cuba"
         },
         {
-            text: "Testimonials",
-            url: "#testimonials"
+            text: "Rastrear Envío",
+            url: "#rastrear-envio"
         }
     ],
-    email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
+    Address: '3220 17th Street, Sarasota, FL 34235',
+    Horario: 'Lunes a Sábado — 9:00 AM a 5:00 PM',
+    email: 'rapidviaservices@gmail.com',
+    telephone: '+1 (941) 536-7542',
     socials: {
         // github: 'https://github.com',
         // x: 'https://twitter.com/x',
-        twitter: 'https://twitter.com/Twitter',
-        facebook: 'https://facebook.com',
+        //twitter: 'https://twitter.com/Twitter',
+        facebook: 'https://www.facebook.com/orlen.escalona.2025/',
         // youtube: 'https://youtube.com',
-        linkedin: 'https://www.linkedin.com',
+        //linkedin: 'https://www.linkedin.com',
         // threads: 'https://www.threads.net',
-        instagram: 'https://www.instagram.com',
+        instagram: 'https://www.instagram.com/reel/DJwrQejxWCx/',
     }
 }

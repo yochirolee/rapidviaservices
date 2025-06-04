@@ -2,15 +2,15 @@ import { IMenuItem } from "@/types";
 
 export const menuItems: IMenuItem[] = [
     {
-        text: "Features",
-        url: "#features"
+        text: "Servicios Notariales",
+        url: "#servicios-notariales"
     },
     {
-        text: "Pricing",
-        url: "#pricing"
+        text: "Envíos a Cuba",
+        url: "#envios-cuba"
     },
     {
-        text: "Testimonials",
-        url: "#testimonials"
+        text: "Rastrear Envío",
+        url: "https://ctenvios.com/tracking"
     }
 ];

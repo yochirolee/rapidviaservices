@@ -1,5 +1,5 @@
 export const heroDetails = {
-    heading: 'Smart, Secure, Simple Financial Management',
-    subheading: 'From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before',
-    centerImageSrc: '/images/hero-mockup.webp',
+    heading: 'Servicios Notariales, de inmigración y Envíos a Cuba',
+    subheading: 'Te ayudamos con tus trámites migratorios, documentos legales y el envío de paquetes a tu familia en Cuba. Soluciones confiables y asequibles.',
+    centerImageSrc: '/images/Notario1.jpg',
 }
