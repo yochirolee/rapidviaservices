@@ -5,6 +5,7 @@ import { IBenefit } from "@/types"
 export const benefits: IBenefit[] = [
     {
         title: "Traducciones Certificadas y Profesionales",
+        
         description: "Ofrecemos traducciones certificadas para trámites migratorios y legales en EE.UU, entre ellas",
         bullets: [
             {
