@@ -5,7 +5,6 @@ import FAQ from "@/components/FAQ";
 import Benefits from "@/components/Benefits/Benefits";
 import Section from "@/components/Section";
 import Stats from "@/components/Stats";
-import CTA from "@/components/CTA";
 import About1 from "@/components/About1";
 import OurServices from "@/components/OurServices";
 import Head from "next/head";
@@ -33,8 +32,8 @@ const HomePage: React.FC = () => {
 				<Benefits />
 				<Section
 					id="pricing"
-					title="Precios"
-					description="Precios simples y transparentes. Sin sorpresas."
+					title=" ¿Qué Incluye Cada Servicio?"
+					description="Descubre en detalle lo que ofrecemos en cada uno de nuestros servicios."
 				>
 					<Pricing />
 				</Section>
@@ -51,7 +50,7 @@ const HomePage: React.FC = () => {
 
 				<Stats />
 
-				<CTA />
+				
 			</div>
 		</>
 	);

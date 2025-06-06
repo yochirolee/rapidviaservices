@@ -30,7 +30,7 @@ const OurServices = () => {
 					</div>
 				</div>
 
-				<div className="  flex flex-wrap">
+				<div className="flex flex-wrap">
 					<ServiceCard
 						title="Asilo político"
 						details="Asistencia profesional en la preparación y presentación de solicitudes de asilo político en Estados Unidos."
@@ -54,7 +54,7 @@ const OurServices = () => {
 						}
 					/>
 					<ServiceCard
-						title="Ajuste de estatus (Residencia)"
+						title="Ajuste de estatus"
 						details="Gestión completa para solicitar la residencia permanente (Green Card) a través del ajuste de estatus migratorio."
 						icon={
 							<svg

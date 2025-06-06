@@ -32,15 +32,15 @@ const Hero: React.FC = () => {
 					<p className=" text-foreground  ">{heroDetails.subheading}</p>
 
 					<div className="flex border border-dashed bg-gray-100 border-gray-300 rounded-lg p-4  w-full items-center justify-between  gap-4 mx-auto">
-						<p className="text-sm flex flex-col gap-2 items-center text-gray-500">
+						<p className="text-sm flex flex-col gap-2 items-center text-gray-500 hover:text-red-500 hover:transition-all hover:scale-105">
 							<BiCheckShield className="w-6 h-6" />
 							Seguridad y confianza
 						</p>
-						<div className="flex flex-col justify-center  text-red-500 font-bold gap-2 text-sm  ">
+						<div className="flex flex-col justify-center  text-red-500 font-bold gap-2 text-sm hover:transition-all hover:scale-105">
 							<BiCheckShield className="w-6 h-6 mx-auto" />
-							<p>Profesionales certificados</p>
+							<p >Profesionales certificados</p>
 						</div>
-						<p className="text-sm flex flex-col gap-2 items-center text-gray-500">
+						<p className="text-sm flex flex-col gap-2 items-center text-gray-500 hover:text-red-500 hover:transition-all hover:scale-105">
 							<BiCheckShield className="w-6  h-6" />
 							Atención personalizada
 						</p>
