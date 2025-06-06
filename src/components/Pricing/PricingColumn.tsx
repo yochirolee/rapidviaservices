@@ -9,7 +9,7 @@ interface Props {
 }
 
 const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
-    const { name, price, features } = tier;
+    const { name, features } = tier;
 
     return (
         <div className={clsx("w-full max-w-sm mx-auto bg-white rounded-xl border border-gray-200 n-all duration-300 hover:scale-105 lg:max-w-full", { "shadow-lg": highlight })}>
