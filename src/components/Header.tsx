@@ -22,7 +22,7 @@ const Header: React.FC = () => {
 					<Link href="/" className="flex items-center gap-2">
 						<Image
 							src="/images/logo2.png"
-							alt="Rapid Via Logo"
+							alt="Rapid Via Logo, envíos a Cuba, trámites legales, notario, ajuste de estatus, ciudadanía, traducciones certificadas"
 							width={80}
 							height={80}
 							className="text-foreground min-w-fit w-16 h-10"
@@ -79,17 +79,14 @@ const Header: React.FC = () => {
 				<div id="mobile-menu" className="md:hidden bg-white shadow-lg">
 					<ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
 						{menuItems.map((item) => (
-							<li key={item.text}>
-								<Link
-									href={item.url}
-									className="text-foreground hover:text-primary block"
-									onClick={toggleMenu}
-								>
-									{item.text}
-								</Link>
-							</li>
+							<Link
+								href={item.url}
+								className="text-foreground hover:text-primary block"
+								onClick={toggleMenu}
+							>
+								{item.text}
+							</Link>
 						))}
-						
 					</ul>
 				</div>
 			</Transition>

@@ -29,7 +29,12 @@ export default function SearchForm() {
 					value={inputValue}
 					onChange={(e) => setInputValue(e.target.value)}
 				/>
-				<Button className="bg-red-600 text-white" type="submit">
+				<Button
+					disabled={isLoading || inputValue.length < 3}
+					variant="default"
+					className="bg-red-600 text-white"
+					type="submit"
+				>
 					{isLoading ? "Buscando..." : "Buscar"}
 				</Button>
 			</form>

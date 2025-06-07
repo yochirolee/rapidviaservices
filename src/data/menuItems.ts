@@ -6,12 +6,12 @@ export const menuItems: IMenuItem[] = [
 		url: "/",
 	},
 	{
-		text: "Servicios Notariales",
-		url: "#servicios-notariales",
+		text: "Servicios",
+		url: "/#our-services",
 	},
 	{
-		text: "Envíos a Cuba",
-		url: "#envios-cuba",
+		text: "Preguntas Frecuentes",
+		url: "/#faq",
 	},
 	{
 		text: "Rastrear Envío",
