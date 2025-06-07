@@ -2,7 +2,6 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
 const production_URL = "https://tracking.ctenvios.com/api/v1";
-const dev_url = "http://localhost:3000/api/v1";
 axios.defaults.baseURL = production_URL;
 const apiKey = "c3VwYmFzZWNyZXQ=";
 axios.defaults.headers.common = { "api-key": apiKey };

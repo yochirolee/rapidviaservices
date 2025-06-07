@@ -1,7 +1,8 @@
 import React from "react";
 import { TrackingCard } from "./TrackingCard";
+import { ITrackingInvoice } from "@/types";
 
-export default function TrackingDetails({ invoice }: { invoice: any }) {
+export default function TrackingDetails({ invoice }: { invoice: ITrackingInvoice }) {
 	// Early return if invoice is falsy or empty
 	if (!invoice || Object.keys(invoice).length === 0) {
 		return <div>No se encontraron datos</div>;

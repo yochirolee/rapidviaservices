@@ -1,6 +1,13 @@
 import { TrackingHistoryCard } from "./TrackingHistoryCard";
+import { ITrackingInvoice, ITrackingParcel } from "@/types";
 
-export function TrackingCard({ parcel, invoice }: { parcel: any; invoice: any }) {
+export function TrackingCard({
+	parcel,
+	invoice,
+}: {
+	parcel: ITrackingParcel;
+	invoice: ITrackingInvoice;
+}) {
 	if (!parcel) return;
 	return (
 		<div className="relative  z-10 -mx-4 shadow-lg ring-1 ring-slate-900/10 sm:mx-0 sm:rounded-3xl  lg:flex-none">

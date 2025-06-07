@@ -1,7 +1,8 @@
 import { CheckIcon } from "lucide-react";
 import { format, parseISO, isValid } from "date-fns";
+import { ITrackingEvent } from "@/types";
 
-export function TrackingHistoryCard({ events }: { events: any }) {
+export function TrackingHistoryCard({ events }: { events: ITrackingEvent[] }) {
 	if (!events) return;
 
 	return (
