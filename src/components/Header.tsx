@@ -34,15 +34,14 @@ const Header: React.FC = () => {
 
 					{/* Desktop Menu */}
 					<ul className="hidden md:flex items-center space-x-6">
-						{menuItems.map((item) => (
-							<li key={item.text}>
-								<Link
-									href={item.url}
-									className="text-foreground  hover:text-foreground-accent transition-colors"
-								>
-									{item.text}
-								</Link>
-							</li>
+						{menuItems.map((item, index) => (
+							<Link
+								key={index}
+								href={item.url}
+								className="text-foreground  hover:text-foreground-accent transition-colors"
+							>
+								{item.text}
+							</Link>
 						))}
 					</ul>
 
@@ -78,8 +77,9 @@ const Header: React.FC = () => {
 			>
 				<div id="mobile-menu" className="md:hidden bg-white shadow-lg">
 					<ul className="flex flex-col space-y-4 pt-1 pb-6 px-6">
-						{menuItems.map((item) => (
+						{menuItems.map((item, index) => (
 							<Link
+								key={index}
 								href={item.url}
 								className="text-foreground hover:text-primary block"
 								onClick={toggleMenu}
