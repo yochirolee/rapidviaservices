@@ -69,5 +69,11 @@ export interface ITrackingEvent {
 	id: string;
 	description: string;
 	location: string;
-	date: string;
+	updatedAt: string;
+	locations: ITrackingLocation;
+}
+
+export interface ITrackingLocation {
+	id: string;
+	name: string;
 }

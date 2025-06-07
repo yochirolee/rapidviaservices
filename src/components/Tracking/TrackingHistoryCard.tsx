@@ -7,7 +7,7 @@ export function TrackingHistoryCard({ events }: { events: ITrackingEvent[] }) {
 
 	return (
 		<ul className=" space-y-8 lg:border-l  border-slate-900/10 pl-4 text-sm leading-6 text-slate-700">
-			{[...events].reverse().map((event: any, index: number) => (
+			{[...events].reverse().map((event: ITrackingEvent, index: number) => (
 				<li key={index} className="flex  items-center ">
 					<CheckIcon className="w-6 h-6 text-red-600" />
 					<p className="ml-5 flex flex-col ">
