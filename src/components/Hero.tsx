@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { heroDetails } from "@/data/hero";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 import { BiCheckShield } from "react-icons/bi";
 
 const Hero: React.FC = () => {
@@ -24,27 +26,35 @@ const Hero: React.FC = () => {
 				</div>
 				<div className="flex flex-col text-center space-y-8  p-4">
 					<h1 className="text-4xl text-primary font-mono md:text-6xl md:leading-tight font-bold  max-w-lg md:max-w-2xl ">
-						Rapid Via Services
+						RapidVia Services
 					</h1>
 					<h2 className="text-xl md:text-4xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl ">
 						{heroDetails.heading}
 					</h2>
 					<p className=" text-foreground  ">{heroDetails.subheading}</p>
 
-					<div className="flex border border-dashed bg-gray-100 border-gray-300 rounded-lg p-4  w-full items-center justify-between  gap-4 mx-auto">
+					<div className="flex border border-dashed bg-gray-100 border-gray-300 rounded-lg p-2 md:p-4  w-full items-center justify-between  gap-2 md:gap-4 mx-auto">
 						<p className="text-sm flex flex-col gap-2 items-center text-gray-500 hover:text-red-500 hover:transition-all hover:scale-105">
 							<BiCheckShield className="w-6 h-6" />
 							Seguridad y confianza
 						</p>
 						<div className="flex flex-col justify-center  text-red-500 font-bold gap-2 text-sm hover:transition-all hover:scale-105">
 							<BiCheckShield className="w-6 h-6 mx-auto" />
-							<p >Profesionales certificados</p>
+							<p>Profesionales certificados</p>
 						</div>
 						<p className="text-sm flex flex-col gap-2 items-center text-gray-500 hover:text-red-500 hover:transition-all hover:scale-105">
 							<BiCheckShield className="w-6  h-6" />
 							Atención personalizada
 						</p>
 					</div>
+					<Link
+						href="https://wa.me/+19415367542"
+						target="_blank"
+						className="flex  md:max-w-fit mx-auto  border border-green-600 justify-center h-12 gap-4 text-green-600  px-4 py-2 rounded-md"
+					>
+						<FaWhatsapp size={24} className="min-w-fit md:w-6 md:h-6" />
+						Contactar por Whatsapp
+					</Link>
 				</div>
 			</div>
 		</section>

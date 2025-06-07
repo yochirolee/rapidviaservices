@@ -1,5 +1,5 @@
 export const siteDetails = {
-	siteName: "Rapid Via Services",
+	siteName: "RapidVia Services",
 	siteUrl: "https://rapidviaservices.com/",
 	metadata: {
 		title: "Servicios Notariales e Inmigración y Envío de paquetes a Cuba",

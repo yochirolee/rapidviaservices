@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
 				<meta name="author" content="Rapid Via Services" />
 				<meta name="robots" content="index, follow" />
 			</Head>
-			<div className="container mx-auto space-y-20 ">
+			<div className="container mx-auto space-y-10 md:space-y-20 ">
 				<Hero />
 				<OurServices />
 				<About1 />
@@ -49,8 +49,6 @@ const HomePage: React.FC = () => {
 				<FAQ />
 
 				<Stats />
-
-				
 			</div>
 		</>
 	);

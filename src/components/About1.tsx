@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const About1 = () => {
 	return (
-		<section className="overflow-hidden  pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white ">
+		<section className="overflow-hidden   bg-white ">
 			<div className="container   mx-auto items-center">
 				<div className="flex flex-wrap items-center justify-between ">
 					<div className="w-full px-4 lg:w-1/2 xl:w-5/12">
@@ -24,7 +24,6 @@ const About1 = () => {
 								Además, ofrecemos envíos seguros y económicos a Cuba, por vía aérea y marítima.
 								Garantizamos entrega puntual y seguimiento en cada etapa para su tranquilidad.
 							</p>
-						
 						</div>
 					</div>
 					<div className="w-full px-4 lg:w-6/12">
@@ -48,7 +47,7 @@ const About1 = () => {
 										width={200}
 									/>
 								</div>
-							</div> 
+							</div>
 
 							<div className="w-full px-3 sm:px-4 xl:w-1/2">
 								<div className="relative z-10 my-4">
