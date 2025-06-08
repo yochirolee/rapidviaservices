@@ -29,14 +29,21 @@ export default function SearchForm() {
 					value={inputValue}
 					onChange={(e) => setInputValue(e.target.value)}
 				/>
-				<Button
+				{/*<Button
 					disabled={isLoading || inputValue.length < 3}
 					variant="default"
-					className="bg-red-600 text-white"
+					className="bg-red-600 text-white "
 					type="submit"
 				>
 					{isLoading ? "Buscando..." : "Buscar"}
-				</Button>
+				</Button>*/}
+				<button
+					disabled={isLoading || inputValue.length < 3}
+					className="bg-red-600 text-white text-sm rounded-md px-6 py-2 min-w-[120px] transition duration-300 ease-in-out hover:bg-red-700 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
+					type="submit"
+				>
+					{isLoading ? "Buscando..." : "Buscar"}
+				</button>
 			</form>
 			{isError && (
 				<Alert variant="destructive">
