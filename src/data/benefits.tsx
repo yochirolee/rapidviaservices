@@ -24,7 +24,7 @@ export const benefits: IBenefit[] = [
                 icon: <FiCreditCard size={26} />
             }
         ],
-        imageSrc: "/images/traducciones-certificadas.png"       
+        imageSrc: "/images/traducciones-certificadas.webp"       
     },
     {
         title: "¿Necesitas un Notario Público?",

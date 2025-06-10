@@ -31,8 +31,8 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
 				<ul className="space-y-4 mb-1">
 					{features.map((feature, index) => (
 						<li key={index} className="flex items-center text-sm leading-tight">
-							<BsFillCheckCircleFill className="relative top-[1px] h-4 w-5 text-red-800 mr-2 hover:text-red-400" />
-							<span className="text-foreground-accent">{feature}</span>
+							<BsFillCheckCircleFill className="relative top-[1px] min-h-4 min-w-4 text-red-800 mr-2 hover:text-red-400" />
+							<span className="text-foreground-accent text-sm md:text-xl">{feature}</span>
 						</li>
 					))}
 				</ul>

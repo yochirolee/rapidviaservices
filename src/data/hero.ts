@@ -1,7 +1,7 @@
 export const heroDetails = {
-	heading: "Rapida y Segura via",
+	heading: "Tu vía rápida y segura para preparar documentos legales en EE.UU.",
 	subheading:
-		"Orlen Escalona Preparadora de Formularios de Inmigración en Estados Unidos. Ayuda y Soporte en la tramitación de tus documentos Legales. No somos abogados y no damos asesoría!",
+		"Orlen Escalona – Preparadora de formularios y documentos legales en Estados Unidos. Te asistimos con la organización y entrega de tus trámites migratorios y civiles.",
 	subheading2:
 		"No somos abogados y no damos asesoría",
 	centerImageSrc: "/images/rapidvia-services1.jpeg",

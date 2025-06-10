@@ -30,7 +30,7 @@ export const tiers: IPricing[] = [
         features: [
             'Miscelaneas',
             'Duraderos',
-            'Medicamntos',
+            'Medicamentos',
             'Alimentos',
             'Regalos',
             'Más',
