@@ -50,7 +50,7 @@ const About1 = () => {
 							<div className="w-full px-3 sm:px-4 xl:w-1/2">
 								<div className="relative z-10 my-4">
 									<Image
-										src="/images/servicio-notario-publico-pasaporte1.png"
+										src="/images/servicio-notario-publico-pasaporte.png"
 										alt="Firma de documentos ante notario público, solicitud de pasaportes para la comunidad latina y otros servicios"
 										className="w-full rounded-2xl shadow-lg"
 										height={400}

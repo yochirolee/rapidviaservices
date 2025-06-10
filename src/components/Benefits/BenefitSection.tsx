@@ -96,7 +96,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
 							width="384"
 							height="500"
 							quality={75}
-							className="w-full h-full object-cover rounded-lg"
+							className="w-full h-full object-cover rounded-lg "
 						/>
 					</div>
 				</div>
