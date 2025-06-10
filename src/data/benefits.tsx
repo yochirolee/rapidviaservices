@@ -46,7 +46,7 @@ export const benefits: IBenefit[] = [
                 icon: <FiHeart size={26} />
             }
         ],
-        imageSrc: "/images/servicio-notario-publico-sarasota.jpeg"
+        imageSrc: "/images/servicio-notario-publico-sarasota.webp"
     },
     {
         title: "Envío de Paquetes a Cuba",
@@ -68,6 +68,6 @@ export const benefits: IBenefit[] = [
                 icon: <FiUserCheck size={26} />
             }
         ],
-        imageSrc: "/images/envio-paquetes-cuba-aereo-maritimo.png"
+        imageSrc: "/images/envio-paquetes-cuba-aereo-maritimo.webp"
     },
 ]

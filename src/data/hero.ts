@@ -4,5 +4,5 @@ export const heroDetails = {
 		"Orlen Escalona – Preparadora de formularios y documentos legales en Estados Unidos. Te asistimos con la organización y entrega de tus trámites migratorios y civiles.",
 	subheading2:
 		"No somos abogados y no damos asesoría",
-	centerImageSrc: "/images/rapidvia-services1.jpeg",
+	centerImageSrc: "/images/rapidvia-services1.webp",
 };

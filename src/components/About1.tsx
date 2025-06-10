@@ -29,7 +29,7 @@ const About1 = () => {
 							<div className="w-full px-3 sm:px-4 xl:w-1/2">
 								<div className="py-3 sm:py-4">
 									<Image
-										src="/images/servicio-notario-publico.png"
+										src="/images/servicio-notario-publico.webp"
 										alt="Traducciones certificadas de documentos para trámites migratorios y legales"
 										className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl object-container shadow-lg"
 										height={400}
@@ -38,7 +38,7 @@ const About1 = () => {
 								</div>
 								<div className="py-3 sm:py-4">
 									<Image
-										src="/images/envio-paquetes-cuba.png"
+										src="/images/envio-paquetes-cuba.webp"
 										alt="Servicio notario publico para trámites legales y notariales"
 										className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl object-cover object-top shadow-lg"
 										height={300}
@@ -50,7 +50,7 @@ const About1 = () => {
 							<div className="w-full px-3 sm:px-4 xl:w-1/2">
 								<div className="relative z-10 my-4">
 									<Image
-										src="/images/servicio-notario-publico-pasaporte.png"
+										src="/images/servicio-notario-publico-pasaporte.webp"
 										alt="Firma de documentos ante notario público, solicitud de pasaportes para la comunidad latina y otros servicios"
 										className="w-full rounded-2xl shadow-lg"
 										height={400}

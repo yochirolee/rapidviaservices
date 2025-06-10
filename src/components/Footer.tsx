@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
 				<div>
 					<Link href="/" className="flex items-center gap-2">
 						<Image
-							src="/images/logo2.png"
+							src="/images/rapidvia-services-tramites-notariales-logo.png"
 							alt="RapidViaServices Logo"
 							width={80}
 							height={80}
