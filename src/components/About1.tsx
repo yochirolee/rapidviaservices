@@ -16,9 +16,7 @@ const About1 = () => {
 								Hacemos felices a nuestros clientes con servicios confiables y personalizados.
 							</h2>
 							<p className="mb-5  text-body-color dark:text-dark-6">
-								Con más de 10 años de experiencia en servicios notariales y trámites migratorios.
-								Nos encargamos de que tus documentos estén en regla y tus procesos avancen sin
-								problemas.
+							Con más de 10 años de experiencia al servicio de la comunidad latina en la preparación de documentos para trámites migratorios y servicios notariales. Nos aseguramos de que tus formularios estén completos, en regla y listos para presentar ante las autoridades.
 							</p>
 							<p className="mb-8  text-body-color dark:text-dark-6">
 								Además, ofrecemos envíos seguros y económicos a Cuba, por vía aérea y marítima.
@@ -31,20 +29,20 @@ const About1 = () => {
 							<div className="w-full px-3 sm:px-4 xl:w-1/2">
 								<div className="py-3 sm:py-4">
 									<Image
-										src="/images/image-1.jpg"
-										alt=""
-										className="w-full rounded-2xl object-cover"
-										height={200}
+										src="/images/servicio-notario-publico.png"
+										alt="Traducciones certificadas de documentos para trámites migratorios y legales"
+										className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl object-container shadow-lg"
+										height={400}
 										width={200}
 									/>
 								</div>
 								<div className="py-3 sm:py-4">
 									<Image
-										src="/images/image-2.jpg"
-										alt=""
-										className="w-full rounded-2xl object-cover"
+										src="/images/envio-paquetes-cuba.png"
+										alt="Servicio notario publico para trámites legales y notariales"
+										className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl object-container shadow-lg"
 										height={300}
-										width={200}
+										width={300}
 									/>
 								</div>
 							</div>
@@ -52,9 +50,9 @@ const About1 = () => {
 							<div className="w-full px-3 sm:px-4 xl:w-1/2">
 								<div className="relative z-10 my-4">
 									<Image
-										src="/images/pasaporte.jpg"
-										alt=""
-										className="w-full rounded-2xl"
+										src="/images/servicio-notario-publico-pasaporte.png"
+										alt="Firma de documentos ante notario público, solicitud de pasaportes para la comunidad latina y otros servicios"
+										className="w-full rounded-2xl shadow-lg"
 										height={400}
 										width={400}
 									/>

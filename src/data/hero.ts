@@ -1,6 +1,8 @@
 export const heroDetails = {
-	heading: "tu Agencia de trámites migratorios y envíos a Cuba",
+	heading: "Rapida y Segura via",
 	subheading:
-		"Te ayudamos con tus trámites migratorios, documentos legales y el envío de paquetes a tu familia en Cuba. Soluciones confiables y asequibles.",
-	centerImageSrc: "/images/image-4.png",
+		"Orlen Escalona Preparadora de Formularios de Inmigración en Estados Unidos. Ayuda y Soporte en la tramitación de tus documentos Legales. No somos abogados y no damos asesoría!",
+	subheading2:
+		"No somos abogados y no damos asesoría",
+	centerImageSrc: "/images/rapidvia-services1.jpeg",
 };

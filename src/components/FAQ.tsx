@@ -15,27 +15,27 @@ const FAQ: React.FC = () => {
 				<div className="flex flex-col items-center lg:items-start">
 					<p className="hidden lg:block text-foreground-accent"></p>
 					<SectionTitle>
-						<h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">
+						<h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left text-lg text-lg">
 							Preguntas frecuentes
 						</h2>
 					</SectionTitle>
-					<p className="lg:mt-10 text-red-600 text-center lg:text-left">
+					<p className="text-red-600 text-center lg:mt-10 lg:text-left text-base lg:text-2xl ">
 						¡Pregúntanos lo que quieras!
 					</p>
 					<Link
 						href="mailto:rapidviaservices@gmail.com"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="mt-3 inline-flex  items-center gap-2 text-xl lg:text-2xl text-foreground-accent font-semibold hover:underline text-center lg:text-left"
+						className="mt-3 inline-flex items-center gap-2 text-base lg:text-2xl text-foreground-accent font-semibold hover:underline text-center lg:text-left"
 					>
-						<FaEnvelope size={24} className="min-w-fit" />
+						<FaEnvelope size={24} className="ml-2 w-6 h-6 lg:w-8 lg:h-8" />
 						rapidviaservices@gmail.com
 					</Link>
 					<Link
 						href="https://wa.me/19415367542"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="mt-3 inline-flex  items-center gap-2 text-xl lg:text-2xl  font-semibold  text-center lg:text-left"
+						className="mt-3 inline-flex  items-center gap-2 text-base lg:text-2xl  font-semibold  text-center lg:text-left"
 					>
 						<FaWhatsapp size={24} className="min-w-fit" />
 						+1 (941) 536-7542

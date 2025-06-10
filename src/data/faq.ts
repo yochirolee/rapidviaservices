@@ -1,23 +1,27 @@
 import { IFAQ } from "@/types";
 export const faqs: IFAQ[] = [
     {
-        question: `¿Qué documentos necesito para trámites migratorios?`,
-        answer: 'Ofrecemos asistencia en asilo político, ajuste de estatus, peticiones familiares, ciudadanía, TPS, renovación de Green Card y más.',
+        question: `¿Porque hacer un tramite con un preparador?`,
+        answer: 'Porque reduces el riesgo de que el resultado se vea comprometido por errores en el proceso. Un preparador conoce los requisitos y evita equivocaciones que pueden atrasar o afectar tu solicitud.',
     },
     {
-        question: `¿Qué tipos de trámites migratorios realizan?`,
-        answer: 'Dependiendo del trámite, los documentos varían. Para servicios comunes como asilo, ajuste de estatus o TPS, te asesoramos y ayudamos a preparar toda la documentación necesaria.',
+        question: `¿Qué documentos necesito para trámites migratorios?`,
+        answer: 'Según el trámite específico que desee realizar, le indicaremos los documentos correctos que debe presentar. Siempre será necesario contar con un documento identificativo con foto actualizado.',
+    },
+    {
+        question: `¿Qué tipo de asesoría brindan para trámites migratorios?`,
+        answer: 'Ofrecemos apoyo en la preparación y llenado de formularios y documentos necesarios para trámites migratorios. Nos aseguramos de que toda la documentación cumpla con los requisitos de forma y presentación exigidos por las autoridades, facilitando así su entrega correcta y oportuna.',
     },
     {
         question: '¿Ofrecen traducciones certificadas para trámites migratorios?',
-        answer: `Sí, contamos con servicios de traducción certificada para documentos oficiales, necesarios en procesos migratorios y legales.`
+        answer: `Sí, contamos con servicios de traducción certificada para documentos oficiales necesarios en procesos migratorios y legales.`
     },
     {
         question: '¿Cómo puedo agendar una cita con el notario público?',
-        answer: 'Llámanos o envíanos un mensaje por WhatsApp al +1 (941) 536-7542, escríbenos al correo rapidviaservices@gmail.com o contáctanos vía Instagram para coordinar tu cita rápido y fácil.',
+        answer: 'Puedes llamarnos o enviarnos un mensaje por WhatsApp al +1 (941) 536-7542, escribirnos al correo rapidviaservices@gmail.com o contactarnos vía Instagram para coordinar tu cita de manera rápida y sencilla.',
     },
     {
         question: '¿Cómo puedo rastrear mi paquete enviado a Cuba?',
-        answer: 'Te proporcionamos un número de seguimiento para monitorear tu envío desde el momento en que sale de Estados Unidos hasta que llega a tu destino en Cuba.'
+        answer: 'Al realizar tu envío, te entregamos un número de seguimiento que te permitirá monitorear el recorrido del paquete desde que sale de Estados Unidos hasta que llega a su destino en Cuba. Para rastrearlo, solo debes ingresar ese número en la página Rastrear Envío de nuestra página web.'
     }
 ];

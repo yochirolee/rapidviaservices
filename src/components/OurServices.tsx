@@ -22,9 +22,7 @@ const OurServices = () => {
 								Servicios que ofrecemos
 							</h1>
 							<p className=" text-body-color ">
-								Ofrecemos servicios de inmigración confiables y personalizados para ayudarte con tus
-								trámites legales en EE.UU., incluyendo asilo político, ajuste de estatus, ciudadanía
-								americana y más.
+								Ofrecemos servicios confiables y personalizados para ayudarte en la preparación de documentos relacionados con procesos migratorios en EE.UU., como asilo político, ajuste de estatus, ciudadanía americana y más.
 							</p>
 						</div>
 					</div>

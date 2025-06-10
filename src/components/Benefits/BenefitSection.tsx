@@ -89,14 +89,14 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
 				</div>
 
 				<div className={clsx("mt-5 lg:mt-0", { "lg:order-2": imageAtRight })}>
-					<div>
+					<div className="w-full max-w-[384px] h-[400px] mx-auto flex items-center justify-center">
 						<Image
 							src={imageSrc}
-							alt="title"
+							alt="traducciones-certificadas-servicio-notario-publico-envio-paquetes-cuba-aereo-maritimo"
 							width="384"
-							height="762"
+							height="500"
 							quality={100}
-							className="lg:ml-0 aspect-square object-cover rounded-2xl shadow-md shadow-gray-300"
+							className="w-full h-full object-contain"
 						/>
 					</div>
 				</div>

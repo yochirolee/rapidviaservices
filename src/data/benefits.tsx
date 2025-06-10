@@ -24,7 +24,7 @@ export const benefits: IBenefit[] = [
                 icon: <FiCreditCard size={26} />
             }
         ],
-        imageSrc: "/images/NotarioSarasota.png"       
+        imageSrc: "/images/traducciones-certificadas.png"       
     },
     {
         title: "¿Necesitas un Notario Público?",
@@ -46,7 +46,7 @@ export const benefits: IBenefit[] = [
                 icon: <FiHeart size={26} />
             }
         ],
-        imageSrc: "/images/Notario11.jpg"
+        imageSrc: "/images/servicio-notario-publico-sarasota.jpeg"
     },
     {
         title: "Envío de Paquetes a Cuba",
@@ -68,6 +68,6 @@ export const benefits: IBenefit[] = [
                 icon: <FiUserCheck size={26} />
             }
         ],
-        imageSrc: "/images/paquete2.jpg"
+        imageSrc: "/images/envio-paquetes-cuba-aereo-maritimo.png"
     },
 ]
