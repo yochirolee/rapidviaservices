@@ -13,8 +13,8 @@ const Hero: React.FC = () => {
 			<div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
 				<div className="absolute inset-0 h-full w-full bg-hero-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] "></div>
 			</div>
-			<div className="container  grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between items-center mx-auto">
-				<div className="mx-auto items-center justify-center h-[400px] w-[400px] md:h-[600px] md:w-[600px]   bg-contain bg-center border-gray-300 lg:rounded-full mx-left ">
+			<div className="container  grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between items-center mx-auto w-fit">
+				<div className="mx-auto items-center justify-center h-[400px] w-[400px] md:h-[600px] md:w-[600px]   bg-contain bg-center border-gray-300 lg:rounded-full mx-left  ">
 					<Image
 						className="lg:rounded-full  rounded-full shadow-xl "
 						src={heroDetails.centerImageSrc}
