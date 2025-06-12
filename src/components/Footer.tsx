@@ -92,10 +92,8 @@ const Footer: React.FC = () => {
 					)}
 				</div>
 			</div>
-			<div className="mt-8 md:text-center text-gray-600 px-6">
-				<p>
-					Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.
-				</p>
+			<div className="mt-8 text-center text-white text-xs px-6">
+				Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.
 			</div>
 		</footer>
 	);

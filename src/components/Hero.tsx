@@ -15,19 +15,20 @@ const Hero: React.FC = () => {
 				<div className="absolute inset-0 h-full w-full bg-hero-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] "></div>
 			</div>
 			<div className="container  grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between items-center mx-auto">
-				<div className="mx-auto items-center justify-center h-full w-full  bg-cover bg-center border-gray-300 lg:rounded-full mx-left ">
+				<div className="mx-auto items-center justify-center h-[400px] w-[400px] md:h-[600px] md:w-[600px]   bg-contain bg-center border-gray-300 lg:rounded-full mx-left ">
 					<Image
-						className="lg:rounded-full  rounded-full shadow-xl w-fit"
+						className="lg:rounded-full  rounded-full shadow-xl "
 						src={heroDetails.centerImageSrc}
 						alt="RapidVia Services - Servicios de inmigración y envíos a Cuba"
 						width={600}
 						height={600}
+						loading="lazy"
+						quality={75}
 					/>
 				</div>
-				
 
 				<div className="flex flex-col text-center space-y-8  p-4">
-					<h1 className="text-4xl text-primary font-mono md:text-6xl md:leading-tight font-bold  max-w-lg md:max-w-2xl ">
+					<h1 className="text-4xl text-primary text-red-700 md:text-6xl md:leading-tight font-bold  max-w-lg md:max-w-2xl ">
 						RapidVia Services
 					</h1>
 					<h2 className="text-xl md:text-4xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl ">
@@ -36,27 +37,13 @@ const Hero: React.FC = () => {
 					<p className=" text-foreground  ">{heroDetails.subheading}</p>
 					<p className=" text-foreground  ">{heroDetails.subheading2}</p>
 
-					<div className="flex border border-dashed bg-gray-100 border-gray-300 rounded-lg p-2 md:p-4  w-full items-center justify-between  gap-2 md:gap-4 mx-auto">
-						<p className="text-sm flex flex-col gap-2 items-center text-gray-500 hover:text-red-500 hover:transition-all hover:scale-105">
-							<BiCheckShield className="w-6 h-6" />
-							Seguridad y confianza
-						</p>
-						<div className="flex flex-col justify-center  text-red-500 font-bold gap-2 text-sm hover:transition-all hover:scale-105">
-							<BiCheckShield className="w-6 h-6 mx-auto" />
-							<p>Profesionales certificados</p>
-						</div>
-						<p className="text-sm flex flex-col gap-2 items-center text-gray-500 hover:text-red-500 hover:transition-all hover:scale-105">
-							<BiCheckShield className="w-6  h-6" />
-							Atención personalizada
-						</p>
-					</div>
 					<Link
 						href="https://wa.me/+19415367542"
 						target="_blank"
 						className="flex  md:max-w-fit mx-auto  border border-green-600 justify-center h-12 gap-4 text-green-600  px-4 py-2 rounded-md"
 					>
 						<FaWhatsapp size={24} className="min-w-fit md:w-6 md:h-6" />
-						Contactar por Whatsapp
+						Whatsapp
 					</Link>
 				</div>
 			</div>

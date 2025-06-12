@@ -15,7 +15,7 @@ const FAQ: React.FC = () => {
 				<div className="flex flex-col items-center lg:items-start">
 					<p className="hidden lg:block text-foreground-accent"></p>
 					<SectionTitle>
-						<h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left text-lg text-lg">
+						<h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left text-lg">
 							Preguntas frecuentes
 						</h2>
 					</SectionTitle>
@@ -42,13 +42,13 @@ const FAQ: React.FC = () => {
 					</Link>
 				</div>
 
-				<div className="w-full lg:max-w-2xl mx-auto border-b">
+				<div className="w-full lg:max-w-2xl mx-auto ">
 					{faqs.map((faq, index) => (
 						<div key={index} className="mb-7">
 							<Disclosure>
 								{({ open }) => (
 									<>
-										<DisclosureButton className="flex items-center justify-between w-full px-4 pt-7 text-lg text-left border-t">
+										<DisclosureButton className="flex items-center justify-between w-full px-4 pt-7 text-lg text-left ">
 											<span className="text-xl font-semibold">{faq.question}</span>
 											{open ? (
 												<BiMinus className="w-5 h-5 text-red-600" />
