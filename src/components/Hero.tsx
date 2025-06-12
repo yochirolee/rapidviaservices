@@ -3,7 +3,6 @@ import Image from "next/image";
 import { heroDetails } from "@/data/hero";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
-import { BiCheckShield } from "react-icons/bi";
 
 const Hero: React.FC = () => {
 	return (
