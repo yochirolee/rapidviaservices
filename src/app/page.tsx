@@ -22,13 +22,7 @@ const HomePage: React.FC = () => {
 					content="servicios notariales Sarasota, preparación de documentos migratorios, traducciones certificadas, envíos a Cuba, notaría pública Sarasota"
 				/>
 				<meta name="author" content="Rapid Via Services" />
-				<meta name="robots" content="index, follow" />
-				{/* Open Graph para compartir en redes */}
-				<meta property="og:title" content="Servicios Notariales, Preparación de Documentos Migratorios y Envío de Paquetes a Cuba | Rapidvia Services" />
-				<meta property="og:description" content="Notaría pública, preparación de documentos para trámites migratorios, traducciones certificadas y envío de paquetes a Cuba desde Sarasota. Servicios rápidos, seguros y personalizados." />
-				<meta property="og:image" content="/images/logo.png" />
-				<meta property="og:url" content="https://rapidviaservices.vercel.app/" />
-				<meta property="og:type" content="website" />
+				<meta name="robots" content="index, follow" />				
 			</Head>
 			<div className="container mx-auto space-y-10 md:space-y-20 ">
 				<Hero />
