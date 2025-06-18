@@ -12,6 +12,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700
 
 export const metadata: Metadata = {
 	title: siteDetails.metadata.title,
+
 	description: siteDetails.metadata.description,
 	openGraph: {
 		title: siteDetails.metadata.title,
@@ -42,6 +43,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<meta
+					name="google-site-verification"
+					content="nZtwGfB9aepU8AimkJmEjhGhuOJ8CifTOvPPKYRitZI"
+				/>
+			</head>
 			<body className={` ${poppins.className} antialiased`}>
 				{siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
 				<Header />
