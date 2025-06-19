@@ -9,7 +9,8 @@ export const footerDetails: {
 	Address: string;
 	Horario: string;
 } = {
-	subheading: "Envíos seguros a Cuba y trámites legales confiables en Sarasota.",
+	subheading:
+		"Envíos seguros a Cuba y ayuda con la documentación para trámites legales confiables en Sarasota.",
 	quickLinks: [
 		{
 			text: "Servicios ",
@@ -25,7 +26,7 @@ export const footerDetails: {
 		},
 	],
 	Address: "3220 17th Street, Sarasota, FL 34235",
-	Horario: "Lunes a Sábado — 9:00 AM a 5:00 PM",
+	Horario: "Lunes a Viernes — 9:00 AM a 5:00 PM",
 	email: "rapidviaservices@gmail.com",
 	telephone: "+1 (941) 536-7542",
 	socials: {

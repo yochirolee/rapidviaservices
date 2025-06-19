@@ -24,7 +24,8 @@ const OurServices = () => {
 							<p className=" text-body-color ">
 								Ofrecemos servicios confiables y personalizados para ayudarte en la preparación de
 								documentos relacionados con procesos migratorios en EE.UU., como asilo político,
-								ajuste de estatus, ciudadanía americana y más.
+								ajuste de estatus, ciudadanía americana y más. También realizamos envíos de paquetes
+								a Cuba.
 							</p>
 						</div>
 					</div>
