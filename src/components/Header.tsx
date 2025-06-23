@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 				<nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-8">
 					<Link href="/" className="flex items-center gap-2">
 						<Image
-							src="/images/rapidvia-services-tramites-notariales-logo.png"
+							src="/images/logo.png"
 							alt="Rapid Via Logo, envíos a Cuba, trámites legales, notario, ajuste de estatus, ciudadanía, traducciones certificadas"
 							width={80}
 							height={80}

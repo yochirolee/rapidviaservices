@@ -14,7 +14,7 @@ const OurServices = () => {
 				<div className="absolute inset-0 h-full w-full bg-red-800 bg-gradient-to-r from-gray-200 to-gray-300  bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
 			</div>
 			<div className="container mx-auto">
-				<div className=" flex flex-wrap">
+				<div className=" flex flex-wrap items-stretch">
 					<div className="w-full px-4">
 						<div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
 							<span className="mb-2 block text-lg font-semibold text-primary"></span>
@@ -173,7 +173,7 @@ const ServiceCard = ({ icon, title, details }: ServiceCardProps) => {
 	return (
 		<>
 			<div className="w-full px-4 md:w-1/2 lg:w-1/3">
-				<div className="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg  md:px-7 xl:px-10">
+				<div className="mb-9 flex flex-col rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg  md:px-7 xl:px-10">
 					<div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-red-700">
 						{icon}
 					</div>
