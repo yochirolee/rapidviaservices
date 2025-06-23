@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { heroDetails } from "@/data/hero";
 import Link from "next/link";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaSearchLocation, FaWhatsapp } from "react-icons/fa";
 
 const Hero: React.FC = () => {
 	return (
@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
 				<div className="absolute inset-0 h-full w-full bg-hero-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] "></div>
 			</div>
 			<div className="container  grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between items-center mx-auto w-fit">
-				<div className="mx-auto items-center justify-center h-[400px] w-[400px] md:h-[600px] md:w-[600px]   bg-contain bg-center border-gray-300 lg:rounded-full mx-left  ">
+				<div className="flex items-center justify-center   bg-contain bg-center border-gray-300 lg:rounded-full mx-left  ">
 					<Image
 						className="lg:rounded-full  rounded-full shadow-xl "
 						src={heroDetails.centerImageSrc}
@@ -35,15 +35,23 @@ const Hero: React.FC = () => {
 					</h2>
 					<p className=" text-foreground  ">{heroDetails.subheading}</p>
 					<p className=" text-foreground  ">{heroDetails.subheading2}</p>
-
-					<Link
-						href="https://wa.me/+19415367542"
-						target="_blank"
-						className="flex  md:max-w-fit mx-auto  border border-green-600 justify-center h-12 gap-4 text-green-600  px-4 py-2 rounded-md"
-					>
-						<FaWhatsapp size={24} className="min-w-fit md:w-6 md:h-6" />
-						Whatsapp
-					</Link>
+					<div className="flex  flex-col md:flex-row gap-4 justify-center items-center">
+						<Link
+							href="https://wa.me/+19415367542"
+							target="_blank"
+							className="inline-flex    justify-center h-12 gap-4 text-green-600  px-4 py-2 rounded-md"
+						>
+							<FaWhatsapp size={24} className="min-w-fit md:w-6 md:h-6" />
+							Whatsapp
+						</Link>
+						<Link
+							href="tracking"
+							className="inline-flex  justify-center h-12 gap-4 text-red-600  px-4 py-2 rounded-md"
+						>
+							<FaSearchLocation size={24} className="min-w-fit md:w-6 md:h-6" />
+							Seguir Envío
+						</Link>
+					</div>
 				</div>
 			</div>
 		</section>

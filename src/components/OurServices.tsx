@@ -22,7 +22,10 @@ const OurServices = () => {
 								Servicios que ofrecemos
 							</h1>
 							<p className=" text-body-color ">
-								Ofrecemos servicios confiables y personalizados para ayudarte en la preparación de documentos relacionados con procesos migratorios en EE.UU., como asilo político, ajuste de estatus, ciudadanía americana y más.
+								Ofrecemos servicios confiables y personalizados para ayudarte en la preparación de
+								documentos relacionados con procesos migratorios en EE.UU., como asilo político,
+								ajuste de estatus, ciudadanía americana y más. También realizamos envíos de paquetes
+								a Cuba.
 							</p>
 						</div>
 					</div>
@@ -140,18 +143,18 @@ const OurServices = () => {
 						}
 					/>
 					<ServiceCard
-						title="Renovación de Green Card"
-						details="Gestión para renovar tu residencia permanente de forma rápida y segura."
+						title="Envío de Paquetes a Cuba"
+						details="Ofrecemos envíos seguros y rápidos a Cuba. Realice el seguimiento de su paquete en todo momento y recíbalo directamente en la puerta de su hogar."
 						icon={
 							<svg
-								aria-label="Icono de Renovación de Green Card"
+								aria-label="Icono de Envio de paquetes a Cuba"
 								width="36"
 								height="36"
 								viewBox="0 0 36 36"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
 							>
-								<title>Icono de Renovación de Green Card</title>
+								<title>Icono de Envio de paquetes a Cuba</title>
 								<path
 									fillRule="evenodd"
 									clipRule="evenodd"
