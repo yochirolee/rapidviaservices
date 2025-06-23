@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 
 const Testimonials: React.FC = () => {
     const containerRef = useRef<HTMLDivElement>(null);
+    const scriptRef = useRef<HTMLScriptElement | null>(null);
 
     useEffect(() => {
         const script = document.createElement('script');
@@ -10,6 +11,7 @@ const Testimonials: React.FC = () => {
         script.async = true;
         script.defer = true;
         document.body.appendChild(script);
+        scriptRef.current = script;
 
         const interval = setInterval(() => {
             const widget = document.querySelector('.ti-widget') as HTMLElement;
@@ -20,8 +22,13 @@ const Testimonials: React.FC = () => {
         }, 300);
 
         return () => {
-            document.body.removeChild(script);
+            if (scriptRef.current && scriptRef.current.parentNode) {
+                scriptRef.current.parentNode.removeChild(scriptRef.current);
+            }
             clearInterval(interval);
+            if (containerRef.current) {
+                containerRef.current.innerHTML = '';
+            }
         };
     }, []);
 
