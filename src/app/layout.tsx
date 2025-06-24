@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: [
 			{
-				url: "/images/og-image.jpg",
+				url: "/images/rapidvia-services-logo.jpeg",
 				width: 1200,
 				height: 675,
 				alt: siteDetails.siteName,
@@ -47,6 +47,27 @@ export default function RootLayout({
 				<meta
 					name="google-site-verification"
 					content="nZtwGfB9aepU8AimkJmEjhGhuOJ8CifTOvPPKYRitZI"
+				/>
+				
+				{/* Open Graph manual */}
+				<meta property="og:title" content={siteDetails.metadata.title} />
+				<meta property="og:description" content={siteDetails.metadata.description} />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content={siteDetails.siteUrl} />
+				<meta
+					property="og:image"
+					content={`${siteDetails.siteUrl}/images/rapidvia-services-logo.jpeg`}
+				/>
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="675" />
+
+				{/* Twitter Card manual */}
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:title" content={siteDetails.metadata.title} />
+				<meta name="twitter:description" content={siteDetails.metadata.description} />
+				<meta
+					name="twitter:image"
+					content={`${siteDetails.siteUrl}/images/rapidvia-services-logo.jpeg`}
 				/>
 			</head>
 			<body className={` ${poppins.className} antialiased`}>
