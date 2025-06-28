@@ -39,20 +39,19 @@ const Footer: React.FC = () => {
 					<h4 className="text-lg font-semibold mb-4">Contáctanos</h4>
 					<div className="flex flex-col gap-2">
 						{footerDetails.Address && (
-							<a
-								href={`mailto:${footerDetails.Address}`}
-								className="block text-white font-light text-sm  hover:text-white"
-							>
-								Dirección: {footerDetails.Address}
-							</a>
+						<a
+						href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(footerDetails.Address)}`}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="block text-white font-light text-sm hover:text-white"
+						  >
+						Dirección: {footerDetails.Address}
+						</a>
 						)}
 						{footerDetails.Horario && (
-							<a
-								href={`mailto:${footerDetails.Horario}`}
-								className="block text-white font-light text-sm  hover:text-white"
-							>
-								Horario: {footerDetails.Horario}
-							</a>
+						<span className="block text-white font-light text-sm">
+							Horario: {footerDetails.Horario}
+						</span>
 						)}
 						{footerDetails.email && (
 							<a
