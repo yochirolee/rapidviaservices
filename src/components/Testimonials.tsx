@@ -45,7 +45,7 @@ export default function TestimonialsSection() {
                   <div className="flex mt-1">{renderStars(testimonial.rating)}</div>
                 </div>
               </div>
-              <p className="text-gray-700 text-sm">“{testimonial.message}”</p>
+              <p className="text-gray-700 text-sm">{testimonial.message}</p>
             </div>
           ))}
         </div>
