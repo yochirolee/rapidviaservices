@@ -13,15 +13,7 @@ interface TestimonialWithRating {
 
 const renderStars = (rating: number) => {
   const stars = [];
-  for (let i = 1; i <= 5; i++) {
-    if (rating >= i) {
-      stars.push(<FaStar key={i} className="text-yellow-400" />);
-    } else if (rating + 0.5 >= i) {
-      stars.push(<FaStarHalfAlt key={i} className="text-yellow-400" />);
-    } else {
-      stars.push(<FaStar key={i} className="text-yellow-400" />);
-    }
-  }
+  stars.push(<FaStar key={5} className="text-yellow-400" />);    
   return stars;
 };
 
