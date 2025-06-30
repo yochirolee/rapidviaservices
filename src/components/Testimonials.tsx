@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { testimonials } from '@/data/testimonials';
-import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
 
 interface TestimonialWithRating {
   name: string;
@@ -13,7 +13,9 @@ interface TestimonialWithRating {
 
 const renderStars = (rating: number) => {
   const stars = [];
-  stars.push(<FaStar key={5} className="text-yellow-400" />);    
+  for (let i = 1; i <= 5; i++) {   
+      stars.push(<FaStar key={rating} className="text-yellow-400" />);   
+  }
   return stars;
 };
 
