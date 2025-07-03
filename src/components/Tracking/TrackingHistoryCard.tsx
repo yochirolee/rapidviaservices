@@ -12,7 +12,7 @@ export function TrackingHistoryCard({ events }: { events: ITrackingEvent[] }) {
 					<CheckIcon className="w-6 h-6 text-red-600" />
 					<p className="ml-5 flex flex-col ">
 						<strong className="flex font-semibold gap-2 text-slate-900">
-							{event?.locations?.name}
+							{event?.location}
 						</strong>
 						<span className="text-xs text-gray-700">
 							{event?.updatedAt && event?.updatedAt !== "0000-00-00"
