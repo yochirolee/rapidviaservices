@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative flex items-center justify-center pb-0 pt-20 md:pt-40 px-5"
+      className="relative flex items-center justify-center pb-0 pt-20 md:pt-40 px-5 overflow-x-clip"
     >
       <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
         <div className="absolute inset-0 h-full w-full bg-hero-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] "></div>
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mx-auto">
         <div className="flex items-center justify-center">
           <Image
-            className="rounded-full shadow-xl"
+            className="rounded-full shadow-xl w-full max-w-[600px] h-auto"
             src={heroDetails.centerImageSrc}
             alt="RapidVia Services - Servicios de inmigración y envíos a Cuba"
             width={600}

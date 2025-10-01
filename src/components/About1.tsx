@@ -31,8 +31,8 @@ const About1 = () => {
 					</div>
 
 					<div className="w-full px-4 lg:w-6/12">
-						<div className="flex items-center -mx-3 sm:-mx-4">
-							<div className="w-full px-3 sm:px-4 xl:w-1/2">
+						<div className="flex items-center gap-6 sm:gap-8">
+							<div className="w-full xl:w-1/2">
 								<div className="py-3 sm:py-4">
 									<Image
 										src="/images/servicio-notario-publico.webp"
@@ -54,7 +54,7 @@ const About1 = () => {
 							</div>
 
 							<div className="w-full px-3 sm:px-4 xl:w-1/2">
-								<div className="relative z-10 my-4">
+								<div className="relative z-10 my-4 overflow-x-clip">
 									<Image
 										src="/images/servicio-notario-publico-pasaporte.webp"
 										alt="Firma de documentos ante notario público, solicitud de pasaportes para la comunidad latina y otros servicios"
@@ -62,7 +62,7 @@ const About1 = () => {
 										height={400}
 										width={400}
 									/>
-									<span className="absolute -right-7 -bottom-7 z-[-1]">
+									<span className="ointer-events-none select-none absolute right-0 bottom-0 translate-x-4 translate-y-4 z-[-1]">
 										<svg
 											width={134}
 											height={106}
