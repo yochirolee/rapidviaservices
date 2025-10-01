@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { BsFillCheckCircleFill } from "react-icons/bs";
-
 import { IPricing } from "@/types";
 
 interface Props {
@@ -15,24 +14,29 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
 		<div
 			className={clsx(
 				"w-full max-w-sm mx-auto bg-white rounded-xl border border-gray-200 n-all duration-300 hover:scale-105 lg:max-w-full",
-				{ "shadow-lg": highlight },
+				{ "shadow-lg": highlight }
 			)}
 		>
 			<div className="p-6 border-b border-gray-200 rounded-t-xl">
-				<h3 className="text-2xl font-semibold mb-1 text-red-800">{name}</h3>
-
-				{/* <button className={clsx("w-full py-3 px-4 rounded-full transition-colors", { "bg-primary hover:bg-primary-accent": highlight, "bg-hero-background hover:bg-gray-200": !highlight })}>
-                    Gee
-                </button>*/}
+				<h3 className="text-xl md:text-2xl font-semibold leading-tight text-red-800 mb-1">
+					{name}
+				</h3>
+				{/* CTA temporalmente comentado */}
 			</div>
+
 			<div className="p-6 mt-1">
-				<p className="font-bold mb-0">INCLUIMOS</p>
-				<p className="text-foreground-accent mb-5"></p>
-				<ul className="space-y-4 mb-1">
+				<p className="font-semibold text-sm md:text-base tracking-wide mb-1">
+					INCLUIMOS
+				</p>
+				<p className="text-body-color text-base leading-relaxed mb-5"></p>
+
+				<ul className="space-y-3 mb-1">
 					{features.map((feature, index) => (
-						<li key={index} className="flex items-center text-sm leading-tight">
-							<BsFillCheckCircleFill className="relative top-[1px] min-h-4 min-w-4 text-red-800 mr-2 hover:text-red-400" />
-							<span className="text-foreground-accent text-sm md:text-xl">{feature}</span>
+						<li key={index} className="flex items-start gap-3">
+							<BsFillCheckCircleFill className="h-4 w-4 mt-[2px] shrink-0 text-red-800" />
+							<span className="text-base leading-relaxed text-body-color">
+								{feature}
+							</span>
 						</li>
 					))}
 				</ul>

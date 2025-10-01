@@ -8,7 +8,7 @@ export const stats: IStats[] = [
 		title: "10k+",
 		icon: <BsBarChartFill size={34} />,
 		description:
-			"Preparación de formularios migratorios con resultados satisfactorios: poderes notariales, peticiones de reunificación familiar, mociones y más.",
+			"Preparación de formularios migratorios: poderes notariales, reunificación familiar y más.",
 	},
 	{
 		title: "100+",

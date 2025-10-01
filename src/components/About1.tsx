@@ -4,26 +4,32 @@ import Image from "next/image";
 
 const About1 = () => {
 	return (
-		<section className="overflow-hidden   bg-white ">
-			<div className="container   mx-auto items-center">
-				<div className="flex flex-wrap items-center justify-between ">
+		<section className="overflow-hidden bg-white">
+			<div className="container mx-auto items-center">
+				<div className="flex flex-wrap items-center justify-between">
 					<div className="w-full px-4 lg:w-1/2 xl:w-5/12">
 						<div className="mt-10 lg:mt-0">
-							<span className="block mb-4 text-lg font-semibold text-primary">
+							<span className="block mb-3 text-sm md:text-base font-semibold text-primary">
 								¿Por qué elegirnos?
 							</span>
-							<h2 className="mb-5 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
+
+							<h2 className="mb-5 text-3xl md:text-4xl font-bold text-dark leading-tight">
 								Hacemos felices a nuestros clientes con servicios confiables y personalizados.
 							</h2>
-							<p className="mb-5  text-body-color dark:text-dark-6">
-							Con más de 10 años de experiencia al servicio de la comunidad latina en la preparación de documentos para trámites migratorios y servicios notariales. Nos aseguramos de que tus formularios estén completos, en regla y listos para presentar ante las autoridades.
+
+							<p className="mb-5 text-body-color text-base leading-relaxed">
+								Con más de 10 años de experiencia al servicio de la comunidad latina en la preparación de documentos
+								para trámites migratorios y servicios notariales. Nos aseguramos de que tus formularios estén completos,
+								en regla y listos para presentar ante las autoridades.
 							</p>
-							<p className="mb-8  text-body-color dark:text-dark-6">
-								Además, ofrecemos envíos seguros y económicos a Cuba, por vía aérea y marítima.
-								Garantizamos entrega puntual y seguimiento en cada etapa para su tranquilidad.
+
+							<p className="mb-8 text-body-color text-base leading-relaxed">
+								Además, ofrecemos envíos seguros y económicos a Cuba, por vía aérea y marítima. Garantizamos entrega
+								puntual y seguimiento en cada etapa para su tranquilidad.
 							</p>
 						</div>
 					</div>
+
 					<div className="w-full px-4 lg:w-6/12">
 						<div className="flex items-center -mx-3 sm:-mx-4">
 							<div className="w-full px-3 sm:px-4 xl:w-1/2">
@@ -31,7 +37,7 @@ const About1 = () => {
 									<Image
 										src="/images/servicio-notario-publico.webp"
 										alt="Traducciones certificadas de documentos para trámites migratorios y legales"
-										className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl object-container shadow-lg"
+										className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl object-cover shadow-lg"
 										height={400}
 										width={200}
 									/>

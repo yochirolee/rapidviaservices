@@ -118,7 +118,7 @@ const ServiceCard = ({ icon, title, details }: ServiceCardProps) => {
         </h4>
 
         {/* mt-auto empuja el texto para ocupar espacio y alinear fondos consistentemente si el título es corto/largo */}
-        <p className="text-gray-600 text-sm md:text-base leading-relaxed mt-1">
+        <p className="text-gray-600 text-base leading-relaxed mt-1">
           {details}
         </p>
 
