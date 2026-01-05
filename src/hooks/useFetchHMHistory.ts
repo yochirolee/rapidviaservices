@@ -1,8 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 
 interface HMHistoryResponse {
-	historial: any[];
-	[key: string]: any;
+	historial: unknown[];
+	[key: string]: unknown;
 }
 
 /**

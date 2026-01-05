@@ -17,7 +17,7 @@ export async function GET(
     const response = await axios.get(upstreamUrl);
 
     return NextResponse.json(response.data);
-  } catch (error: any) {
+  } catch {
     return NextResponse.json({ historial: [] });
   }
 }

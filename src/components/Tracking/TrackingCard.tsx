@@ -5,10 +5,11 @@ import { FileText } from "lucide-react";
 import { TrackingHistoryCard } from "./TrackingHistoryCard";
 import { useFetchHMHistory } from "@/hooks/useFetchHMHistory";
 import { mergeAndNormalizeEvents } from "@/lib/eventMerger";
+import { ITrackingInvoice, ITrackingParcel } from "@/types";
 
 interface TrackingCardProps {
-  parcel: any;
-  invoice: any;
+  parcel: ITrackingParcel;
+  invoice: ITrackingInvoice;
 }
 
 export const TrackingCard = ({ parcel, invoice }: TrackingCardProps) => {

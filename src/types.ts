@@ -57,6 +57,8 @@ export interface ISocials {
 export interface ITrackingInvoice {
 	agency: string;
 	invoiceId: string;
+	province?: string;
+	city?: string;
 
 	parcels: ITrackingParcel[];
 }
