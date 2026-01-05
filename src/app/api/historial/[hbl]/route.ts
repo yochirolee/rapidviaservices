@@ -12,10 +12,8 @@ export async function GET(
   }
 
   try {
-    // HM History API endpoint - fetches warehouse and delivery events
     const HM_API_URL = 'http://72.60.114.241/api/historial/envio';
     const upstreamUrl = `${HM_API_URL}/${hbl}`;
-    
     const response = await axios.get(upstreamUrl);
 
     return NextResponse.json(response.data);
