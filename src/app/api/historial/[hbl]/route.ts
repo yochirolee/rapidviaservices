@@ -20,8 +20,6 @@ export async function GET(
 
     return NextResponse.json(response.data);
   } catch (error: any) {
-    console.error('Error fetching HM history:', error.message);
-    // Return empty history on error to prevent breaking the UI
     return NextResponse.json({ historial: [] });
   }
 }
