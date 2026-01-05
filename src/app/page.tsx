@@ -7,7 +7,6 @@ import Section from "@/components/Section";
 import Stats from "@/components/Stats";
 import About1 from "@/components/About1";
 import OurServices from "@/components/OurServices";
-import Head from "next/head";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
