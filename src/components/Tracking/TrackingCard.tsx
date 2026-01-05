@@ -42,6 +42,7 @@ export const TrackingCard = ({ parcel, invoice }: TrackingCardProps) => {
                 {invoice?.province} - {invoice?.city}
               </div>
             </>
+            
           )}
           
           <div className="my-4 flex items-center">
