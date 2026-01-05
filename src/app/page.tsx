@@ -8,22 +8,16 @@ import Stats from "@/components/Stats";
 import About1 from "@/components/About1";
 import OurServices from "@/components/OurServices";
 import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Servicios Notariales, Preparación de Documentos Migratorios y Envío de Paquetes a Cuba | Rapidvia Services",
+	description: "Notaría pública, preparación de documentos para trámites migratorios, traducciones certificadas y envío de paquetes a Cuba desde Sarasota. Servicios rápidos, seguros y personalizados.",
+	keywords: "servicios notariales Sarasota, preparación de documentos migratorios, traducciones certificadas, envíos a Cuba, notaría pública Sarasota",
+	robots: "index, follow",
+};
 const HomePage: React.FC = () => {
 	return (
-		<>
-			<Head>
-				<title>Servicios Notariales, Preparación de Documentos Migratorios y Envío de Paquetes a Cuba | Rapidvia Services</title>
-				<meta
-					name="description"
-					content="Notaría pública, preparación de documentos para trámites migratorios, traducciones certificadas y envío de paquetes a Cuba desde Sarasota. Servicios rápidos, seguros y personalizados."					
-				/>
-				<meta
-					name="keywords"
-					content="servicios notariales Sarasota, preparación de documentos migratorios, traducciones certificadas, envíos a Cuba, notaría pública Sarasota"
-				/>
-				<meta name="author" content="Rapid Via Services" />
-				<meta name="robots" content="index, follow" />				
-			</Head>
 			<div className="container mx-auto space-y-10 md:space-y-20 ">
 				<Hero />
 				<OurServices />
@@ -50,7 +44,7 @@ const HomePage: React.FC = () => {
 
 				<Stats />
 			</div>
-		</>
+		
 	);
 };
 
