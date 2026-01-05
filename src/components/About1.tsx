@@ -12,11 +12,9 @@ const About1 = () => {
 							<span className="block mb-3 text-sm md:text-base font-semibold text-primary">
 								¿Por qué elegirnos?
 							</span>
-
 							<h2 className="mb-5 text-3xl md:text-4xl font-bold text-dark leading-tight">
 								Hacemos felices a nuestros clientes con servicios confiables y personalizados.
 							</h2>
-
 							<p className="mb-5 text-body-color text-base leading-relaxed">
 								Con más de 10 años de experiencia al servicio de la comunidad latina en la preparación de documentos
 								para trámites migratorios y servicios notariales. Nos aseguramos de que tus formularios estén completos,
