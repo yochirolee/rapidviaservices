@@ -1,44 +1,63 @@
-import { TrackingHistoryCard } from "./TrackingHistoryCard";
-import { ITrackingInvoice, ITrackingParcel } from "@/types";
+"use client";
 
-export function TrackingCard({
-	parcel,
-	invoice,
-}: {
-	parcel: ITrackingParcel;
-	invoice: ITrackingInvoice;
-}) {
-	if (!parcel) return;
-	return (
-		<div className="relative  z-10 -mx-4 shadow-lg ring-1 ring-slate-900/10 sm:mx-0 sm:rounded-3xl  lg:flex-none">
-			<div className="flex absolute -bottom-px left-1/2 -ml-48 h-[2px] w-96">
-				<div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(239,68,68,0)_0%,#EF4444_32.29%,rgba(220,38,38,0.3)_67.19%,rgba(220,38,38,0)_100%)]"></div>
-				<div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(239,68,68,0)_0%,#EF4444_32.29%,rgba(220,38,38,0.3)_67.19%,rgba(220,38,38,0)_100%)]"></div>
-				<div className="-ml-[100%] w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(239,68,68,0)_0%,#EF4444_32.29%,rgba(220,38,38,0.3)_67.19%,rgba(220,38,38,0)_100%)]"></div>
-				<div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(239,68,68,0)_0%,#EF4444_32.29%,rgba(220,38,38,0.3)_67.19%,rgba(220,38,38,0)_100%)]"></div>
-			</div>
-			<div className="relative flex flex-col lg:flex-row items-center gap-6 bg-white px-4 py-10 sm:rounded-3xl sm:px-10">
-				<div>
-					<div className="flex  gap-2 lg:gap-0 items-center justify-between">
-						<h1 className="text-xl my-6">{invoice?.agency}</h1>
-						<span className="inline-flex justify-center rounded-lg text-sm font-semibold py-2 px-3 border  bg-white/5  text-gray-700 ">
-							<span className="flex items-center gap-2">
-								<span aria-hidden="true">{invoice?.invoiceId}</span>
-							</span>
-						</span>
-					</div>
-					<div className="my-4 flex items-center">
-						<p className="text-[1.5rem] leading-none text-slate-900">
-							<span className="font-bold">{parcel?.hbl}</span>
-						</p>
-						<p className="ml-3 space-x-1 text-sm">
-							<span className="font-semibold text-slate-900">HBL</span>
-						</p>
-					</div>
-					<span className="text-slate-500 mt-4">{parcel?.description}</span>
-				</div>
-				<TrackingHistoryCard events={parcel.events} />
-			</div>
-		</div>
-	);
+import  { useMemo } from "react";
+import { FileText } from "lucide-react";
+import { TrackingHistoryCard } from "./TrackingHistoryCard";
+import { useFetchHMHistory } from "@/hooks/useFetchHMHistory";
+import { mergeAndNormalizeEvents } from "@/lib/eventMerger";
+
+interface TrackingCardProps {
+  parcel: any;
+  invoice: any;
 }
+
+export const TrackingCard = ({ parcel, invoice }: TrackingCardProps) => {
+  const { data: hmHistory, isLoading: isLoadingHM } = useFetchHMHistory(
+    parcel?.hbl
+  );
+
+  const mergedEvents = useMemo(() => {
+    const baseEvents = parcel?.events || parcel || [];
+    return mergeAndNormalizeEvents(baseEvents, hmHistory || {});
+  }, [parcel, hmHistory]);
+
+  if (!parcel) return null;
+
+  return (
+     
+      <div className="border border-red-200/80 flex flex-col lg:flex-row items-center gap-6 bg-card px-4 py-10 sm:rounded-3xl sm:px-10">
+        <div className="flex-1 w-full lg:w-auto">
+          {invoice && (
+            <>
+              <div className="flex gap-2  lg:gap-0 items-center justify-between">
+                <h1 className="text-xl my-6 font-semibold">{invoice?.agency}</h1>
+                <span className="inline-flex bg-red-600/80 text-white justify-center rounded-lg text-sm font-semibold py-2 px-3  ">
+                  <span className="flex items-center gap-2 ">
+                    <FileText className="h-4 w-4" />
+                    <span aria-hidden="true">{invoice?.invoiceId}</span>
+                  </span>
+                </span>
+              </div>
+              <div className="text-sm text-muted-foreground my-2">
+                {invoice?.province} - {invoice?.city}
+              </div>
+            </>
+          )}
+          
+          <div className="my-4 flex items-center">
+            <p className="text-[1.5rem] leading-none text-foreground">
+              <span className="font-bold">{parcel?.hbl}</span>
+            </p>
+            <p className="ml-3 space-x-1 text-sm bg-muted px-2 py-1 rounded text-muted-foreground">
+              <span className="font-semibold">HBL</span>
+            </p>
+          </div>
+          <span className="text-muted-foreground mt-4 block">{parcel?.description}</span>
+        </div>
+        <div className="w-full lg:w-1/2">
+             <TrackingHistoryCard events={mergedEvents} isLoading={isLoadingHM} />
+        </div>
+      </div>
+    
+  );
+};
