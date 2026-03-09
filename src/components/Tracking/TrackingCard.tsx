@@ -13,7 +13,7 @@ interface TrackingCardProps {
 }
 
 export const TrackingCard = ({ parcel, invoice }: TrackingCardProps) => {
-  const { data: hmHistory, isLoading: isLoadingHM } = useFetchHMHistory(
+  const { data: hmHistory,isLoading: isLoadingHM } = useFetchHMHistory(
     parcel?.hbl
   );
 

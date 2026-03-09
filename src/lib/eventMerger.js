@@ -107,7 +107,7 @@ const mapHmHistoryToTrackingEvent = (hm) => {
 
 	let statusCfg = HM_STATUS_MAP[hm.tipo] || {
 		code: hm.tipo ? hm.tipo.toUpperCase() : "HM_EVENT",
-		name: evento || "Evento HM",
+		name: evento || "Evento",
 	};
 
 	const eventoLower = evento.toLowerCase();
@@ -163,16 +163,13 @@ const isDeliveryEvent = (ev) => {
  * @returns {Array} - Merged, sorted, and deduplicated events
  */
 export const mergeAndNormalizeEvents = (baseEvents, hmHistoryRaw) => {
-	// Handle hmHistoryRaw safely
+	// Handle hmHistoryRaw safely – only use historial when it has data
 	let hmArray = [];
 	if (Array.isArray(hmHistoryRaw)) {
 		hmArray = hmHistoryRaw;
 	} else if (hmHistoryRaw && typeof hmHistoryRaw === "object") {
-		if (Array.isArray(hmHistoryRaw.historial)) {
+		if (Array.isArray(hmHistoryRaw.historial) && hmHistoryRaw.historial.length > 0) {
 			hmArray = hmHistoryRaw.historial;
-		} else {
-			// Assume it's a single event object if it has relevant props or just wrap it
-			hmArray = [hmHistoryRaw];
 		}
 	}
 
