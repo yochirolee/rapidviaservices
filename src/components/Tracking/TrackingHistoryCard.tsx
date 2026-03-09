@@ -50,7 +50,6 @@ export const TrackingHistoryCard = ({ events, isLoading }: TrackingHistoryCardPr
    if (!events || events.length === 0) {
       return <div className="text-sm text-muted-foreground py-4">No hay eventos disponibles</div>;
    }
-
    return (
       <div className="space-y-4">
          <ul className="space-y-8 lg:border-l border-red-200/80 pl-4 text-sm leading-6 text-foreground">
