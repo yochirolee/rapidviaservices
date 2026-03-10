@@ -7,17 +7,19 @@ interface HMHistoryResponse {
 
 /**
  * Fetches HM history for a given HBL
- * Uses HM API directly (NEXT_PUBLIC_HM_API_URL). Set to empty to use proxy for CORS.
+ * Uses proxy by default (avoids Mixed Content in prod). Set NEXT_PUBLIC_HM_API_URL for direct HM API (local dev only).
  * @param {string} hbl - The HBL code to fetch history for
  * @returns {Promise<HMHistoryResponse>} - The HM history response
  */
 const HM_FETCH_TIMEOUT_MS = 2500;
 
-const HM_API_BASE =
-	process.env.NEXT_PUBLIC_HM_API_URL ?? "http://72.60.114.241/api/historial/envio";
-
-const getHMUrl = (hbl: string): string =>
-	`${HM_API_BASE.replace(/\/$/, "")}/${hbl.trim()}/`;
+const getHMUrl = (hbl: string): string => {
+	const base = process.env.NEXT_PUBLIC_HM_API_URL;
+	if (base) {
+		return `${base.replace(/\/$/, "")}/${hbl.trim()}/`;
+	}
+	return `/api/historial/${hbl.trim()}`;
+};
 
 const fetchHMHistory = async (hbl: string): Promise<HMHistoryResponse> => {
 	if (!hbl || hbl.trim() === "") {
