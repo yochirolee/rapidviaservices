@@ -76,6 +76,8 @@ export interface ISocials {
 export interface ITrackingInvoice {
 	agency: string;
 	invoiceId: string;
+	/** Present on some API payloads */
+	order_id?: string;
 	province?: string;
 	city?: string;
 

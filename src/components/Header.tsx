@@ -64,7 +64,9 @@ export default function Header(): JSX.Element {
                      <Separator />
                      <nav className="flex flex-col gap-1 mx-4">
                         {menuItems.map((item) => (
-                           <Link href={item.url}>{item.text}</Link>
+                           <Link key={item.url} href={item.url}>
+                              {item.text}
+                           </Link>
                         ))}
                         <Button className="mt-2 justify-start gap-2 rounded-xl" asChild>
                            <Link href="/tracking">

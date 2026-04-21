@@ -38,7 +38,7 @@ export default function SearchForm(): JSX.Element {
       }
    }, [urlSearch]);
 
-   const { data, isLoading, isError, error, isFetched } = useFetchByInvoiceOrHBL(searchTerm);
+   const { data, isLoading, isError, isFetched } = useFetchByInvoiceOrHBL(searchTerm);
 
    const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
       e.preventDefault();

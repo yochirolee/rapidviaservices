@@ -2,6 +2,7 @@ import { format, parseISO } from "date-fns";
 import { es } from "date-fns/locale";
 import { Check, Truck } from "lucide-react";
 import { dedupeTrackingEventsForDisplay, getTrackingEventPresentation } from "@/lib/trackingEventLabels";
+import type { ITrackingEvent } from "@/types";
 
 const getEventIcon = (statusCode: string) => {
    if (statusCode === "DELIVERED") {
@@ -22,7 +23,7 @@ const formatEventDate = (timestamp: string) => {
    }
 };
 
-export const TrackingHistoryCard = ({ events }: { events: any }) => {
+export const TrackingHistoryCard = ({ events }: { events: ITrackingEvent[] | undefined }) => {
    const displayEvents = events && events.length > 0 ? dedupeTrackingEventsForDisplay(events) : [];
    const hasEvents = displayEvents.length > 0;
 
