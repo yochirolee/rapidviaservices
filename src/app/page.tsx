@@ -1,0 +1,52 @@
+import Hero from "@/components/Hero";
+import Testimonials from "@/components/Testimonials";
+import Pricing from "@/components/Pricing/Pricing";
+import FAQ from "@/components/FAQ";
+import Benefits from "@/components/Benefits/Benefits";
+import Section from "@/components/Section";
+import Stats from "@/components/Stats";
+import About1 from "@/components/About1";
+import OurServices from "@/components/OurServices";
+import CTA from "@/components/CTA";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Servicios Notariales, Preparación de Documentos Migratorios y Envío de Paquetes a Cuba | Rapidvia Services",
+	description: "Notaría pública, preparación de documentos para trámites migratorios, traducciones certificadas y envío de paquetes a Cuba desde Sarasota. Servicios rápidos, seguros y personalizados.",
+	keywords: "servicios notariales Sarasota, preparación de documentos migratorios, traducciones certificadas, envíos a Cuba, notaría pública Sarasota",
+	robots: "index, follow",
+};
+const HomePage: React.FC = () => {
+	return (
+		<div className="container mx-auto space-y-10 md:space-y-20">
+			<Hero />
+			<OurServices />
+			<About1 />
+
+			<Benefits />
+			<Section
+				id="pricing"
+				title=" ¿Qué Incluye Cada Servicio?"
+				description="Descubre en detalle lo que ofrecemos en cada uno de nuestros servicios."
+			>
+				<Pricing />
+			</Section>
+
+			<Section
+				id="testimonials"
+				title="Lo que dicen nuestros clientes"
+				description="Conoce la experiencia de quienes han confiado en nosotros."
+			>
+				<Testimonials />
+			</Section>
+
+			<FAQ />
+
+			<CTA />
+
+			<Stats />
+		</div>
+	);
+};
+
+export default HomePage;
